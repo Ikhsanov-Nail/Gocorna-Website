@@ -1,5 +1,5 @@
 @import 'libs/bootstrap-reboot.min';
-@import 'libs/fonts.scss';
+@import 'libs/fonts';
 
 *,
 *::before,
@@ -34,11 +34,21 @@ body {
 }
 
 .main {
-	flex: auto;
+	flex: 1 1 auto;
+	// Расшифровка
+	// flex-grow: 1; -- показывает, может ли расти флекс-элемент и насколько
+	// flex-shrink: 1; -- показывает, может ли уменьшаться флекс-элемент и насколько
+	// flex-basis: auto; -- показывает исходный (базовый размер/ширину) элемента, относительно которых уже он увеличивается или уменьшается
+
 }
 
 [class*="__container"] {
 	//Таким образом добавляя этот класс к блокам (секциям), они будут принимать заданные значения
-	max-width: 1057px;
+	max-width: 1087px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
+
+@import 'blocks/header';
+
+@import 'blocks/media';
