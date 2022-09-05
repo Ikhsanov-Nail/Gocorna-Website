@@ -1,4 +1,5 @@
 .header {
+	background-color: #FAFBFD;
 	// position: absolute;
 	// width: 100%;
 	// top: 0;
@@ -9,8 +10,6 @@
 		align-items: center;
 		min-height: 114px;
 	}
-	// &__logo {}
-	// &__logo-img {}
 	&__menu {
 		flex: 1 1 auto;
 		padding-right: 38px;
@@ -28,7 +27,6 @@
 		display: flex;
 		gap: 40px;
 	}
-	// &__item {}
 	&__link {
 		font-family: 'Raleway';
 		font-weight: 700;
@@ -36,27 +34,18 @@
 		line-height: 1.2;
 		letter-spacing: 0.14em;
 		color: #000;
+		&:hover {
+			text-decoration: none;
+		}
 	}
-	// &__hamburger {
-	// 	position: absolute;
-	// 	top: 20px;
-	// 	right: 30px;
-	// 	height: 21px;
-	// 	display: flex;
-	// 	flex-direction: column;
-	// 	justify-content: space-between;
-	// 	span {
-	// 		display: block;
-	// 		width: 36px;
-	// 		height: 3px;
-	// 		background: #151812;
-	// 	}
-	// }
+	&__hamburger {
+		display: none;
+	}
 }
 .button {
-	display: flex;
+	// display: flex;
 	padding: 14px 37px;
-	background: #EC5863;
+	background-color: #EC5863;
 	border-radius: 5px;
 	text-transform: uppercase;
 	font-family: 'Raleway';
@@ -65,19 +54,22 @@
 	line-height: 1.2;
 	letter-spacing: 0.14em;
 	color: #FCFDFE;
-	transition: background 0.5s ease;
+	transition: background-color 0.5s ease;
+	&:focus {
+		outline: none;
+	}
 	&:hover {
-		background: #ff3341;
+		background-color: #0062ff;
 		text-decoration: none;
 		color: #FCFDFE;
 	}
 	&-blue {
 		padding: 14px 30px;
-		background: #4285F4;
-	}
-	&:hover {
-		background: #0062ff;
-		text-decoration: none;
-		color: #FCFDFE;
+		background-color: #4285F4;
+		&:hover {
+			background-color: #ff3341;
+			text-decoration: none;
+			color: #FCFDFE;
+		}
 	}
 }

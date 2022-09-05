@@ -1,0 +1,35 @@
+.promo {
+	background-color: #FAFBFD;
+	padding: 40px 0px 48px 0px;
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__content {
+		flex: 0 1 48%;
+	}
+	&__block-text {}
+	&__image {
+		flex: 0 1 52%;
+	}
+	&__video {
+		flex: 1 1 100%;
+	}
+	&__video-icon {}
+}
+.block-text {
+	&__title {}
+	&__title-blue {}
+	&__dscr {}
+	&__button {}
+}
+.button {}
+.video {
+	&__promo {}
+	&__promo-link {
+		display: inline-block;
+	}
+	&__promo-body {}
+	&__promo-title {}
+	&__promo-text {}
+}
